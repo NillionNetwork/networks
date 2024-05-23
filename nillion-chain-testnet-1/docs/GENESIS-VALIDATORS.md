@@ -31,9 +31,7 @@ Create a PR with your JSON in this repo with your gentx in this folder [nillion-
 
 ### **Download final genesis**
 
-```
-wget https://raw.githubusercontent.com/NillionNetwork/networks/main/nillion-chain-testnet-1/genesis.json -O .nillionapp/config/genesis.json
-```
+Download the [genesis](../genesis.json) and add to the `.nillionapp/config` directory
 
 ### **Submit node details**
 

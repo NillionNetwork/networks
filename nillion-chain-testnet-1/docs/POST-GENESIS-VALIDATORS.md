@@ -10,11 +10,7 @@ You will also need to [initialise](./INITIALISE.md) the node.
 
 ### Download genesis file.
 
-Download the genesis file from this repo:
-
-```
-wget https://raw.githubusercontent.com/NillionNetwork/networks/main/nillion-chain-testnet-1/genesis.json -O .nillionapp/config/genesis.json
-```
+Download the [genesis](../genesis.json) and add to the `.nillionapp/config` directory
 
 ### Add peers
 
