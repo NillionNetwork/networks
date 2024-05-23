@@ -4,9 +4,12 @@
 
 In addition to the node having the recommended [hardware](./SPECIFICATIONS.md) you will need the following on the node:
 
+### Compile time dependencies
 - Go 1.21+
 - make and gcc
-- jq (optional)
+
+### Optional dependencies
+- jq (useful for querying the fields from node statuses)
 
 ## Install binary
 
