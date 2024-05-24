@@ -33,6 +33,10 @@ Create a PR with your JSON in this repo with your gentx in this folder [nillion-
 
 Download the [genesis](../genesis.json) and add to the `.nillionapp/config` directory
 
+### Set short commit timeout
+
+Please set the `timeout_commit = "1s"` in `config.toml`
+
 ### **Submit node details**
 
 Start your node and get its status via:

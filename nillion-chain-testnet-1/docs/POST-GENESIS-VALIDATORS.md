@@ -16,6 +16,10 @@ Download the [genesis](../genesis.json) and add to the `.nillionapp/config` dire
 
 Add the peers from the [peers.txt](../peers.txt) file in this repo into seeds field the `[p2p]` section in the `config.toml`.
 
+### Set short commit timeout
+
+Please set the `timeout_commit = "1s"` in `config.toml`
+
 ### Start node
 
 Start your node and let it catch up to the head of the chain.
