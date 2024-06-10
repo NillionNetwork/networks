@@ -1,6 +1,6 @@
 # Post-Genesis Validators
 
-First, [install](./INSTALL.md) and build the nilliond binary.
+First, [install](./INSTALL.md) and build the nilchaind binary.
 
 ## **Create account and initialise**
 
@@ -25,7 +25,7 @@ Please set the `timeout_commit = "1s"` in `config.toml`
 Start your node and let it catch up to the head of the chain.
 
 ```
-nilliond status | jq .sync_info.catching_up
+nilchaind status | jq .sync_info.catching_up
 ```
 should return `false` when caught up.  
 
@@ -34,9 +34,9 @@ should return `false` when caught up.
 To allow your node to start validating you will need to submit a create validator message:
 
 ```bash
-nilliond tx staking create-validator \
+nilchaind tx staking create-validator \
 --amount=<amount> \
---pubkey=$(nilliond comet show-validator) \
+--pubkey=$(nilchaind comet show-validator) \
 --moniker="<moniker>" \
 --chain-id="nillion-chain-testnet-1" \
 --commission-rate="<commission>" \

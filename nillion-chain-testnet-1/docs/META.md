@@ -2,7 +2,7 @@
 
 Chain-ID: `nillion-chain-testnet-1`
 
-Chain-Repo: [`github.com/NillionNetwork/nilliond`](http://github.com/NillionNetwork/nilliond)
+Chain-Repo: [`github.com/NillionNetwork/nilchain`](http://github.com/NillionNetwork/nilchain)
 
 Networks-Repo: [`github.com/NillionNetwork/networks`](https://github.com/NillionNetwork/networks)
 

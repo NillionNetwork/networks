@@ -1,6 +1,6 @@
 # Genesis Validators
 
-First, [install](./INSTALL.md) and build the nilliond binary.
+First, [install](./INSTALL.md) and build the nilchaind binary.
 
 ## **Create account and initialise**
 
@@ -12,7 +12,7 @@ An account is needed for pre-genesis. You will need to generate [keys](./KEYS.md
 You will also need to [initialise](./INITIALISE.md) the node and add your genesis account:
 
 ```bash
-nilliond genesis add-genesis-account <account_name> 1000000unil
+nilchaind genesis add-genesis-account <account_name> 1000000unil
 ```
 
 ## **Submit gentx**
@@ -20,7 +20,7 @@ nilliond genesis add-genesis-account <account_name> 1000000unil
 It is run on the computer that hosts the cold validator operator app key, using the keyring of your choice. Collect the consensus public key from CometBFT KMS.
 
 ```bash
-nilliond genesis gentx <account_name> 1000000unil --chain-id=nillion-chain-testnet-1 --moniker=<your moniker> --details=<your desc> --commission-rate=0.05 --commission-max-rate=0.2 --commission-max-change-rate=0.02 --pubkey=$(nilliond comet show-validator) --identity=<your ident> --security-contact <your-email> --keyring-backend os
+nilchaind genesis gentx <account_name> 1000000unil --chain-id=nillion-chain-testnet-1 --moniker=<your moniker> --details=<your desc> --commission-rate=0.05 --commission-max-rate=0.2 --commission-max-change-rate=0.02 --pubkey=$(nilchaind comet show-validator) --identity=<your ident> --security-contact <your-email> --keyring-backend os
 ```
 
 This creates a JSON file on the validator's computer, typically in `~/.nillionapp/config/gentx/`
@@ -42,7 +42,7 @@ Please set the `timeout_commit = "1s"` in `config.toml`
 Start your node and get its status via:
 
 ```
-nilliond status
+nilchaind status
 ```
 
 We need:
