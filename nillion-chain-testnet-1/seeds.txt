@@ -1,1 +1,2 @@
 20e1000e88125698264454a884812746c2eb4807@testnet-seeds.lavenderfive.com:28156
+c06d93fb95cfbbe69bffea605661e8cc53d15733@seeds.cros-nest.com:2676626766
