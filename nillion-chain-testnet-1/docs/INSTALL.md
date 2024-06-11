@@ -19,7 +19,7 @@ Clone and install nilliond:
 
 ```bash
 git clone git@github.com:NillionNetwork/nilchain.git
-cd nichain
+cd nilchain
 git checkout tags/v0.2.1
 make install
 ```
