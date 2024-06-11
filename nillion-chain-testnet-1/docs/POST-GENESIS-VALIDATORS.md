@@ -34,15 +34,24 @@ should return `false` when caught up.
 To allow your node to start validating you will need to submit a create validator message:
 
 ```bash
-nilchaind tx staking create-validator \
---amount=<amount> \
---pubkey=$(nilchaind comet show-validator) \
---moniker="<moniker>" \
+cat <<EOF > validator.json
+{
+	"pubkey": $(nilchaind comet show-validator),
+	"amount": <amount>,
+	"moniker": "<moniker>",
+	"identity": "<keybase>",
+	"website": "<url>",
+	"security": "<email>",
+	"details": "<details>",
+	"commission-rate": "<commission>",
+	"commission-max-rate": "<max-commission>",
+	"commission-max-change-rate": "<max-commission-rate-change>",
+	"min-self-delegation": "<min-self-delegation>"
+}
+EOF
+
+nilchaind tx staking create-validator validator.json \
 --chain-id="nillion-chain-testnet-1" \
---commission-rate="<commission>" \
---commission-max-rate="<max-commission>" \
---commission-max-change-rate="<max-commission-rate-change>" \
---min-self-delegation="<min-self-delegation>" \
 --fees=<fees> \
 --from=<key-name>
 ```
