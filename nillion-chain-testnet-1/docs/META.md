@@ -6,7 +6,7 @@ Chain-Repo: [`github.com/NillionNetwork/nilchain`](http://github.com/NillionNetw
 
 Networks-Repo: [`github.com/NillionNetwork/networks`](https://github.com/NillionNetwork/networks)
 
-Tag: `0.1.1`
+Tag: `0.2.1`
 
 Denom: `nil/unil`
 
