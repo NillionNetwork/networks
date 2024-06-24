@@ -14,7 +14,7 @@ Download the [genesis](../genesis.json) and add to the `.nillionapp/config` dire
 
 ### Add peers
 
-Add the peers from the [peers.txt](../peers.txt) file in this repo into seeds field the `[p2p]` section in the `config.toml`.
+Add the peers from the [peers.txt](../peers.txt) file in this repo into peers field the `[p2p]` section in the `config.toml`.
 
 ### Set short commit timeout
 
