@@ -1,6 +1,6 @@
 # Keys
 
-In order to validate on the nillion testnet you need to create keys.
+In order to validate on the nillion mainnet you need to create keys.
 
 > DO NOT recycle the mnemonic used for testnet if you are a testnet validator. Please use new keys.
 
