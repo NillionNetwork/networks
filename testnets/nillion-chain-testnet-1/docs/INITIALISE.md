@@ -6,4 +6,4 @@ In order to run a node it needs to be initialised which creates node keys and a 
 nilchaind init <node_name> --chain-id=nillion-chain-testnet-1
 ```
 
-Where the the node_name is the moniker of your node.
+Where the node_name is the moniker of your node.
