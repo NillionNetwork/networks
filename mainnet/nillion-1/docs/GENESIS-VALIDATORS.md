@@ -4,10 +4,7 @@ First, [install](./INSTALL.md) and build the nilchaind binary.
 
 ## **Create account and initialise**
 
-An account is needed for pre-genesis. You will need to generate [keys](./KEYS.md) and then supply the following to Nillion:
-
-- `address`
-- `pubkey`
+An account is needed for genesis. You will need to generate [keys](./KEYS.md).
 
 You will also need to [initialise](./INITIALISE.md) the node and add your genesis account:
 
@@ -17,6 +14,7 @@ nilchaind genesis add-genesis-account <account_name> 1000000unil
 
 ## **Submit gentx**
 
+
 It is run on the computer that hosts the cold validator operator app key, using the keyring of your choice. Collect the consensus public key from CometBFT KMS.
 
 ```bash
@@ -25,7 +23,13 @@ nilchaind genesis gentx <account_name> 1000000unil --chain-id=nillion-1 --monike
 
 This creates a JSON file on the validator's computer, typically in `~/.nillionapp/config/gentx/`
 
-Create a PR with your JSON in this repo with your gentx in this folder [nillion-1/gentx](../gentx)
+Create a PR with your JSON in this repo with your gentx in this folder [nillion-1/gentx](../gentx).  Please also include:
+
+- `address`
+- `pubkey`
+
+in the PR description.
+
 
 ## Mainnet launch
 
