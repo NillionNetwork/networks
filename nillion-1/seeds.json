@@ -1,0 +1,6 @@
+{
+# Comma separated list of seed nodes to connect to
+
+seeds = "ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:28156,ff5d57b8e9b99cb8105ea21ef2264bd737401a82@185.182.194.186:26656,c06d93fb95cfbbe69bffea605661e8cc53d15733@38.242.150.63:26766,20e1000e88125698264454a884812746c2eb4807@seeds.lavenderfive.com:28156,9cc1a277e800c6fa7b38d9d4fbf5633a522c9d5f@tenderseed.ccvalidators.com:26111"
+
+}
